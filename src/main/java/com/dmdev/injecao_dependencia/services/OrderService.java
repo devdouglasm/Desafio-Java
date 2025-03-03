@@ -12,7 +12,7 @@ public class OrderService {
 
     public double total(Order order) {
         double totalDiscount = order.getBasic() * order.getDiscount() / 100;
-        return order.getBasic() - totalDiscount;
+        return order.getBasic() - totalDiscount + shippingService.shipment(order);
     }
 
 }
