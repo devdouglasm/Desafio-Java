@@ -1,5 +1,7 @@
 package com.dmdev.injecao_dependencia.entities;
 
+import com.dmdev.injecao_dependencia.services.OrderService;
+
 public class Order {
 
     private Integer code;
@@ -35,4 +37,5 @@ public class Order {
     public void setDiscount(Double discount) {
         this.discount = discount;
     }
+
 }
